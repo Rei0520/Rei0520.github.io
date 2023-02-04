@@ -1,0 +1,86 @@
+@import "style.css";
+@import "stylePrint.css";
+
+/*Part settings*/
+#pt1, #pt4b {text-align: center;}
+
+#pt2, #pt3, #pt4a, #pt5 {display: flex; flex-direction: row; 
+    margin: auto; padding: 4% 5%;
+    width: 90%; height: auto;}
+
+#pt1, #pt4a, #pt4b {background-color: black;}
+
+#pt1 {color: rgb(249, 239, 235); padding: 0px 10px 0px 10px;}
+#pt2 {background-color: rgb(239, 239, 239);}
+#pt4a, #pt4b {color: rgb(24, 133, 205);}
+#pt5 {background-color: rgb(188, 49, 72); color: black; 
+    padding-bottom: 10px;}
+
+/*Text Settings*/
+#pt2 div, #pt3 div, #pt4a div, #pt5 div {flex: 1; margin: 10px;}
+
+#pt4a p, h1, h2 {padding: 10px;}
+
+#pt4a div {display: flex; flex-direction: row;}
+#pt4a div p{flex: 1;}
+
+#pt5 h2 {display:inline;}
+
+/*Image settings*/
+img[alt = "a Long History"] {width: 90%; height: auto; max-width: 800px;}
+img[alt = "Current Day 1"] {width:100%; height: auto;}
+
+img[alt = "JW Foster"], 
+img[alt = "Early Reebok Ad"] {display: block; clear: both; flex: 1; height: auto;}
+
+img[alt = "JW Foster"] {float: right; width: 90%; max-width: 390px;}
+img[alt = "Early Reebok Ad"] {float: left; width: 50%; max-width: 400px; border: 2px black solid;}
+img[alt = "Current Day 2"] {width: 100%; height: auto;}
+
+/*Animation settings*/
+@keyframes opacity {
+    0%{opacity: 0.0;}
+    100%{opacity: 1.0;}
+}
+
+#pt1 h1, #pt1 p {opacity: 1;
+    animation: opacity 0.5s linear;
+}
+
+.reveal{position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{transform: translateY(0); opacity: 1;}
+
+/*Optimization settings*/
+@media screen and (max-width: 920px) {
+    #pt2, #pt3, #pt4a, #pt4a div, #pt5 {flex-direction: column; width: 90%;}
+
+    img[alt = "Early Reebok Ad"], img[alt = "JW Foster"] {height: auto; margin: auto;}
+    img[alt = "Early Reebok Ad"] {order: 2; width: 80%;}
+    img[alt = "JW Foster"] {width: 70%;}
+}
+
+@media screen and (max-width: 315px) {
+    audio {max-width: 100%;}
+}
+
+@media print {
+    .reveal, .reveal.active {transform: translateY(0); opacity: 1;}
+
+    #pt4b {background-color: rgba( 255, 255, 255, 0.0); color: black;}
+}
+
+@media print and (max-width: 8.25in) {
+    #pt2, #pt3, #pt4a, #pt4a div, #pt5 {flex-direction: column; width: 90%;}
+
+    img[alt = "Early Reebok Ad"], img[alt = "JW Foster"] {height: auto; margin: auto;}
+    img[alt = "Early Reebok Ad"] {order: 2; width: 80%;}
+    img[alt = "JW Foster"] {width: 70%;}
+
+    audio {max-width: 100%;}
+}
+         

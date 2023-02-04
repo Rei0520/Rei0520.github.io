@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Us - Reebok</title>
+        <meta name="description" content="Contact info submission page.">
+        <meta name="keywords" content="sports, reebok, feedback, contact">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" type = "image/x-icon" href = "./images/favicon.ico">
+        <link rel="stylesheet" type = "text/css" href="./css/contactUs.css" media = "all">
+    </head>
+    
+    <body>
+        <header>
+            <div>
+                <a href = "index.html"><img src = "images/ReebokHLogo.png" alt = "Reebok Header Logo"></a>
+            </div>
+
+            <nav>
+                <a href = "index.html">Home</a> &nbsp;&nbsp;&nbsp;<a href = "aboutUs.html">About&nbsp;Us</a>  &nbsp;&nbsp;&nbsp;<a href = "contactUs.html">Contact&nbsp;Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Wanna contact us?</h2>
+
+            <p>Just write down your credentials below, and we'll keep in touch.</p>
+
+            <form name = "contactName" action = "contacted.html" onsubmit = "sessionStorage.setItem('yourName', document.forms[0].name.value);">
+                <label for = "name">Name: </label><input type = "text" name = "name" id = "name" maxlength = "60" placeholder = "Enter your full name" required><br>
+                <label for = "email">Email Address: </label><input type = "email" name = "email" id = "email" maxlength = "40" placeholder = "Enter email address" required><br>
+                <label for = "comment">Comments (optional): </label>
+                <textarea name = "comment" id = "comment" placeholder = "enter optional comment" rows = "5"></textarea><br>
+
+                <input type = "submit" name = "submit" id = "submit" value = "Submit Info"><br>
+            </form>
+
+        </main>
+
+        <footer>
+            <nav>
+                <div>
+                    <h2>Info: </h2>
+                    <a href = "index.html">Home Page</a><br>
+                    <a href = "aboutUs.html">About Us</a><br>
+                    <a href = "contactUs.html">Contact Us</a><br>
+                </div>
+
+                <div>
+                    <h2>Featured: </h2>
+                    <a href = "theXCollection.html">The Flexweave Collection</a><br>
+                    <a href = "theYCampaign.html">Reebok Sustainability</a><br><br>
+                </div>
+
+                <div>
+                    <h2>Catalogue: </h2>
+                    <div>
+                        <a href = "men.html">Men</a><br>
+                        <a href = "women.html">Women</a><br>
+                        <a href = "kids.html">Kids</a><br>
+                    </div>
+
+                    <div>
+                        <a href = "fitness.html">Fitness</a><br>
+                        <a href = "lifestyle.html">Lifestyle</a><br>
+                        <a href = "sports.html">Sports</a>  
+                    </div>
+                </div>
+
+                <div id = "copyright">
+                    <a href = "index.html"><img src = "images/ReebokFLogo.png" alt = "Reebok Footer Logo"></a><br>&copy;2022 Reebok Inc. Created for academic purposes only.
+                </div>
+
+            </nav>
+        </footer>
+    </body>
+</html>

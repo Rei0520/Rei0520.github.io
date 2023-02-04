@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Submission Complete - Reebok</title>
+        <meta name="description" content="Screen to be shown upon completion of contact info submission.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" type = "image/x-icon" href = "./images/favicon.ico">
+        <link rel="stylesheet" type = "text/css" href="./css/contacted.css" media = "all">
+    </head>
+    
+    <body>
+        <header>
+            <div>
+                <a href = "index.html"><img src = "images/ReebokHLogo.png" alt = "Reebok Header Logo"></a>
+            </div>
+
+            <nav>
+                <a href = "index.html">Home</a> &nbsp;&nbsp;&nbsp;<a href = "aboutUs.html">About&nbsp;Us</a>  &nbsp;&nbsp;&nbsp;<a href = "contactUs.html">Contact&nbsp;Us</a>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Info Submission Complete</h1>
+            Thank you, <span id = "yourName"></span>we'll keep in touch :)<br><br>
+
+            <a href = "index.html">Continue browsing</a>
+        </main>
+
+        <footer>
+            <nav>
+                <div>
+                    <h2>Info: </h2>
+                    <a href = "index.html">Home Page</a><br>
+                    <a href = "aboutUs.html">About Us</a><br>
+                    <a href = "contactUs.html">Contact Us</a><br>
+                </div>
+
+                <div>
+                    <h2>Featured: </h2>
+                    <a href = "theXCollection.html">The Flexweave Collection</a><br>
+                    <a href = "theYCampaign.html">Reebok Sustainability</a><br><br>
+                </div>
+
+                <div>
+                    <h2>Catalogue: </h2>
+                    <div>
+                        <a href = "men.html">Men</a><br>
+                        <a href = "women.html">Women</a><br>
+                        <a href = "kids.html">Kids</a><br>
+
+                    </div>
+
+                    <div>
+                        <a href = "fitness.html">Fitness</a><br>
+                        <a href = "lifestyle.html">Lifestyle</a><br>
+                        <a href = "sports.html">Sports</a>  
+                    </div>
+                </div>
+
+                <div id = "copyright">
+                    <a href = "index.html"><img src = "images/ReebokFLogo.png" alt = "Reebok Footer Logo"></a><br>&copy;2022 Reebok Inc. Created for academic purposes only.
+                </div>
+
+            </nav>
+        </footer>
+
+        <script>
+            const yourName = sessionStorage.getItem("yourName");
+            if(yourName == null)
+                document.getElementById("yourName").innerHTML = "<b>" + "name" + "</b>" + ", ";
+            else
+                document.getElementById("yourName").innerHTML = "<b>" + yourName + "</b>" + ", ";
+        </script>
+        
+    </body>
+</html>

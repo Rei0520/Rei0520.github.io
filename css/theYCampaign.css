@@ -1,0 +1,104 @@
+@import "style.css";
+@import "stylePrint.css";
+
+/*Part settings*/
+#pt1a, #pt1a p {text-align: center; align-items: center; background-color: white;}
+#pt1a {padding: 0px 10px 0px 10px;}
+
+#pt1b {position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/ReebokSustN.jpg);
+    height: 100%; width: auto;}
+
+#pt2, #pt4 {margin: auto; width: 100%; height: auto; padding-top: 20px;}
+
+#pt2 {background-color: black; color: white; padding-bottom: 20px;}
+
+#pt3 {display: flex; 
+    flex-direction: row; 
+    background-color: rgb(35,41,2); 
+    color: rgb(137, 226, 63);}
+
+#pt3 div, #pt3 img {flex: 1;}
+#pt3 img {width: 50%; height: auto;}
+
+#pt3 h2, #pt3 p {padding-left: 10px;}
+#pt3 p {padding-right: 10px;}
+
+#pt4 {text-align: center; background-color: rgb(41, 43, 91); color:rgb(137, 226, 63); padding-bottom: 60px;}
+
+#pt4 .lp, #pt4 .rp {font-weight: bold;}
+
+#pt4 .lp {display: inline-block; font-size: 48px; transform: rotate(20deg); clear: both;}
+#pt4 .rp {display: block; font-size: 54px; text-decoration: underline;}
+
+/*Text settings*/
+#pt2 h2, #pt2 p {padding-left: 20px;}
+
+#pt2 div {display: flex; flex-direction: row; width: 71%; height: auto; align-items: center; margin: auto;}
+
+#pt2 div img, #pt2 div span {flex: 1; width: 50%; max-width: 650px; height: auto;}
+
+#pt2 div span {display: block; padding: 0px 10px 0px 10px;}
+
+p {text-align: left;}
+
+img[alt = "top image"] {width: 100%;}
+
+/*Animation settings*/
+@keyframes opacity {
+    0%{opacity: 0.0;}
+    100%{opacity: 1.0;}
+}
+
+#pt1a h1, #pt1a p {opacity: 1;
+    animation: opacity 0.5s linear;
+}
+
+.reveal{position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active{transform: translateY(0); opacity: 1;}
+
+/*Optimization settings*/
+@media screen and (max-width: 630px) {
+    #pt3 {flex-direction: column;}
+
+    #pt2 div{width: 90%;}
+
+    #pt3 img {flex: 1; width: 100%; height: auto;}        
+}
+
+@media screen and (max-width: 432px) {
+    #pt2 div{padding: 10px 0px 10px 0px;}       
+}
+
+
+@media print {
+    .reveal, .reveal.active {transform: translateY(0); opacity: 1;}
+
+    #pt1b {display: none;}
+
+    h2 {display: inline;}
+}
+
+@media print and (max-width: 5.5in) {
+
+    #pt3 {flex-direction: column;}
+
+    #pt2 div{width: 90%; padding: 10px 0px 10px 0px;}
+
+    #pt3 img {flex: 1; width: 100%; height: auto;}
+
+    .reveal, .reveal.active {transform: translateY(0); opacity: 1;}
+
+    #pt1b {display: none;}
+
+    h2 {display: inline;}
+}

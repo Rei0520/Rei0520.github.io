@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sustainability - Reebok</title>
+        <meta name="description" content="Informational page about Reebok's sustainability initiatives.">
+        <meta name="keywords" content="sports, reebok, information, sustainability, earth, eco, environment">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "icon" type = "image/x-icon" href = "./images/favicon.ico">
+        <link rel="stylesheet" type = "text/css" href="./css/theYCampaign.css" media = "all">
+    </head>
+    
+    <body>
+
+        <header>
+            <div>
+                <a href = "index.html"><img src = "images/ReebokHLogo.png" alt = "Reebok Header Logo"></a>
+            </div>
+
+            <nav>
+                <a href = "index.html">Home</a> &nbsp;&nbsp;&nbsp;<a href = "aboutUs.html">About&nbsp;Us</a>  &nbsp;&nbsp;&nbsp;<a href = "contactUs.html">Contact&nbsp;Us</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <div id = "pt1a">
+                <h1>The Y Campaign: Our Path to Complete Sustainability</h1>
+
+                <p>
+                    Each passing day, climate change continues to become a more pressing issue for the Earth as we know it. 
+                    The beautiful planet we live in is constantly threatened by the negative effects of human activity.
+                </p>
+                
+                <p>
+                    Therefore, as part of our initiative to be a responsible company, 
+                    we at Reebok aim to create high-quality products that are environmentally friendly and safe for the planet.
+                </p>
+            </div>
+
+
+            <div id = "pt1b">
+                <br><br><br><br><br><br>
+                <br><br><br><br><br><br>
+                <br><br><br><br><br><br>
+                <br><br><br><br><br><br>
+            </div>
+
+            <div id = "pt2">
+                
+                <h2>A Sustainable Future for All</h2>
+                <p>
+                    As part of our drive to always go the extra mile, in the name of sustainability, we have evolved our process to be as eco-friendly as possible:
+                </p>
+
+                <div>
+                    <img src = "images/ReebokMNF.jpg" alt = "Reebok Manufacturing">
+                    <span class="reveal active">Our brand is committed to using more sustainable materials throughout our manufacturing process, and in our shops.</span>
+                </div>
+
+                <div>
+                    <span class="reveal active">With the help of the industry, we have also made efforts towards dealing with the impact of microplastic materials.</span>
+                    <img src = "images/ReebokMCPL.jpg" alt = "Microplastics on Finger">
+                </div>
+
+                <div>
+                    <img src = "images/ReebokRCY.jpg" alt = "Recycled Shoe">
+                    <span class="reveal active">Our company is also commited to recycling, giving new life to unwanted materials, for example by using recycled polyster and regenerated nylon.</span>
+                </div>
+
+                <div>
+                    <span class="reveal active">With a Fashion Transparency Index score of 69%, Reebok is committed to disclosing our impact to the environment, and society at large.</span>
+                    <img src = "images/ReebokFTI.jpg" alt = "Fashion Transparency Index Cover">
+                </div>
+
+
+            </div>
+
+            <div id = "pt3">
+                
+                <div class="reveal active">
+                    <h2>New Shoes, Old Materials</h2>
+
+                    <p>
+                        In addition, to commemorate our move towards sustainable manufacturing, 
+                        we released a collection of sustainable shoes, 
+                        made with plant-based or recycled materials.
+                    </p>
+                </div>
+
+                <img src = "images/ReebokSuSh.jpg" alt = "Sustainable Shoe">
+
+            </div>
+
+            <div id = "pt4">
+                <h2 class="reveal active">Our Sustainability Goals</h2>
+                <div>
+                    <div class="reveal active"><span class = "lp">30%</span> Reduced greenhouse gases from suppliers<br></div>
+                    <div class="reveal active"><span class = "lp">35%</span> Reduced water usage per employee<br></div>
+                    <div class="reveal active"><span class = "lp">100%</span> Sustainable chemical use<br><br></div>
+
+                    <div class="reveal active">In addition, we aim to be 100% carbon neutral by</div>
+                    <div class="reveal active"><span class = "rp">2050.</span></div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer>
+            <nav>
+                <div>
+                <h2>Info: </h2>
+                <a href="index.html">Home Page</a><br>
+                <a href="aboutUs.html">About Us</a><br>
+                <a href="aboutUs.html">Contact Us</a><br>
+            </div>
+
+            <div>
+                <h2>Featured: </h2>
+                <a href = "theXCollection.html">The Flexweave Collection</a><br>
+                <a href = "theYCampaign.html">Reebok Sustainability</a><br><br>
+            </div>
+
+            <div>
+                <h2>Catalogue: </h2>
+                <div>
+                    <a href="men.html">Men</a><br>
+                    <a href="women.html">Women</a><br>
+                    <a href="kids.html">Kids</a><br>
+
+                </div>
+
+                <div>
+                    <a href = "fitness.html">Fitness</a><br>
+                    <a href = "lifestyle.html">Lifestyle</a><br>
+                    <a href = "sports.html">Sports</a>  
+                </div>
+            </div>
+                <div id = "copyright">
+                    <a href = "index.html"><img src = "images/ReebokFLogo.png" alt = "Reebok Footer Logo"></a><br>&copy;2022 Reebok Inc. Created for academic purposes only.
+                </div>
+
+            </nav>
+        </footer>
+
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = windowHeight * (5/100);
+
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+
+            function throttle (action, limit) {
+                var wait = false;
+                return function () {
+                    if(wait == false) {
+                        action.call();
+                        wait = true;
+                        setTimeout(function () {wait = false;}, limit);
+                    }
+                }
+            }
+
+            window.addEventListener("scroll", throttle(reveal, 3));
+        </script>
+    </body>
+</html>

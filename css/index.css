@@ -1,0 +1,534 @@
+@import "style.css";
+@import "stylePrint.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.slideshow-container1 {
+    max-width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.slideshow-container1 .mySlides1 {
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides1 {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0%;
+}
+
+.mySlides1 .inner {
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    box-shadow: 10px 10px 10px black;
+    border-radius: 10px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.inner>img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+.inner div:first-of-type {
+    height: 15%;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: LibreCaslonText;
+}
+
+.inner div:last-of-type {
+    text-align: center;
+    padding-bottom: 1%;
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+    font-family: Tinos;
+}
+
+.inner:hover {
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+}
+
+.slideshow-container {
+    max-width: 95%;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 2.5%;
+    position: relative;
+    border: solid 1px black;
+}
+
+noscript div {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.slideshow-container .mySlides {
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.act,
+.dot:hover {
+    background-color: grey
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: 30px;
+    height: 100px;
+    align-content: center;
+    color: black;
+    font-size: 30px;
+    transition: .6s ease;
+}
+
+.next {
+    right: 0px;
+    opacity: 0.5;
+}
+
+.prev {
+    left: 0px;
+    opacity: 0.5;
+}
+
+.prev:hover,
+.next:hover {
+    color: white;
+    background-color: black
+}
+
+
+.section {
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.pg {
+    position: absolute;
+    top: 50px;
+}
+
+.pg div {
+    font-size: 70px;
+    font-family: LibreCaslon;
+    font-weight: bold;
+    color: rgb(228, 36, 36);
+    text-align: center;
+    margin-left: 10px;
+}
+
+.text {
+    font-size: 30px;
+    font-family: Tinos;
+    color: white;
+    text-align: justify;
+    margin-left: 10%;
+}
+
+.section .pg {
+    width: 55%;
+    height: 90%;
+}
+
+.section video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#h1 {
+    font-size: 70px;
+    font-family: LibreBakersville;
+    text-align: center;
+    color: red;
+    font-weight: bold;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 505px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.feature1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.feature img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+    height: 250px;
+}
+
+.feature3 {
+    position: absolute;
+    z-index: 2;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    top: 46%;
+    left: 25%;
+    text-align: center;
+    font-family: LibreBakersville;
+}
+
+.featuretext {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Tinos;
+}
+
+.featuretext1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Tinos;
+    margin-left: 10px;
+}
+
+.deals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+
+#sort {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.deals a {
+    font-family: LibreBakersville;
+    text-align: center;
+    width: 20%;
+    height: 200px;
+    margin: 10px 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+#sports {
+    background-image: url(../images/sports.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fitness {
+    background-image: url(../images/fitness.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#lifestyle {
+    background-image: url(../images/lifestyle.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#etc {
+    background-image: url(../images/etc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#men {
+    background-image: url(../images/men.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#women {
+    background-image: url(../images/women.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kids {
+    background-image: url(../images/kids.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#shoes {
+    background-image: url(../images/shoe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#clothing {
+    background-image: url(../images/clothing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    text-align: center;
+}
+
+.sale-item div {
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    height: 200px;
+    padding-top: 90px;
+    background: linear-gradient(transparent 0%, black 100%);
+}
+
+.deals a:hover,
+.deals a div:hover {
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: scale(1.05);
+    transition: all ease 0.5s;
+    background: linear-gradient(transparent 0%, transparent 100%);
+}
+
+
+@media(max-width: 940px) {
+    .text {
+        font-size: 25px;
+        text-align: left;
+    }
+
+    .section .pg {
+        width: 70%;
+        height: 90%;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .slideshow-container {
+        height: 300px;
+    }
+
+    .prev,
+    .next {
+        width: 25px;
+        height: 75px;
+        font-size: 20px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin-top: 10px;
+    }
+
+    #h1 {
+        font-size: 50px;
+    }
+
+    .feature {
+        height: 400px;
+        border: 1px solid black;
+    }
+
+    .feature img {
+        height: 199px;
+        object-fit: fill;
+    }
+
+    .feature3 {
+        font-size: 30px;
+        left: 20%;
+        top: 47%;
+    }
+
+    .featuretext {
+        font-size: 30px;
+    }
+
+    .slideshow-container1 {
+        height: 300px;
+    }
+
+    .inner img {
+        height: 80%;
+    }
+
+    .inner div:first-of-type {
+        height: 15%;
+        font-size: 15px;
+    }
+
+    .inner div:last-of-type {
+        font-size: 20px;
+    }
+
+    .deals {
+        width: 100%;
+    }
+
+    .deals a {
+        width: 90%;
+        height: 150px;
+    }
+
+    .sale-item div {
+        font-size: 18px;
+        height: 150px;
+        padding-top: 50px;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .text {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .section .pg {
+        width: 70%;
+        height: 90%;
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .slideshow-container {
+        height: 200px;
+    }
+
+    .prev,
+    .next {
+        width: 20px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+
+    #h1 {
+        font-size: 28px;
+    }
+
+    .feature {
+        height: 300px;
+        border: 1px solid black;
+    }
+
+    .feature img {
+        height: 149px;
+        object-fit: fill;
+    }
+
+    .feature3 {
+        font-size: 15px;
+        left: 100px;
+    }
+
+    .featuretext {
+        font-size: 20px;
+    }
+
+    .slideshow-container1 {
+        height: 200px;
+    }
+
+    .inner img {
+        height: 75%;
+    }
+
+    .inner div:first-of-type {
+        height: 20%;
+        font-size: 10px;
+    }
+
+    .inner div:last-of-type {
+        font-size: 15px;
+    }
+
+    #sort {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .deals {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .deals a {
+        width: 90%;
+        height: 100px;
+        height: 190px;
+    }
+
+    .sale-item div {
+        font-size: 20px;
+    }
+}

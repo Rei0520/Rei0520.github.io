@@ -1,0 +1,142 @@
+@font-face {
+    font-family: Tinos;
+    src: url(../fonts/Tinos-Regular.ttf);}
+
+@font-face {
+    font-family: LibreBakersville;
+    src: url(../fonts/LibreBaskerville-Regular.ttf);}
+
+@font-face {
+    font-family: LibreCaslon;
+    src: url(../fonts/LibreCaslonText-Regular.ttf);}
+
+
+/*Default font settings*/
+h1 {
+    font-family: LibreCaslon, serif;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+h2 {
+    font-family: LibreBakersville, serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+nav,
+body {
+    font-family: Tinos, serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+/*--------------------------------------*/
+
+/*Standard header and footer settings*/
+body {
+    margin: 0px;
+}
+
+header, footer {
+    font-family: Tinos, serif;
+    font-weight: 300;
+    font-size: 12.5px;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 20px;
+    line-height: 2.5em;
+    border-radius: 0px 0px 10px 10px;
+    background-color: black;
+    color: white;
+}
+
+header a img {
+    width: 90px;
+    height: auto;
+}
+
+header div,
+header nav {
+    flex: 1;
+}
+
+header div {
+    text-align: left;
+}
+
+header nav {
+    text-align: right;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer nav div,
+#copyright {
+    display: inline-block;
+}
+
+footer nav div {
+    padding: 0px 12px 12px 12px;
+}
+
+#copyright {
+    font-size: 10px;
+    text-align: center;
+    width: 20%;
+}
+
+footer img {
+    width: 100px;
+}
+
+@media screen and (max-width: 800px) {
+    #copyright {
+        display: block;
+        font-size: 10px;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+header a,
+footer a,
+header a:hover,
+footer a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a,
+footer a {
+    color: white;
+}
+
+header a:hover,
+footer a:hover {
+    color: lightblue;
+}
+
+@media screen and (max-width: 800px) {
+    #copyright {display: block; 
+	font-size: 10px; 
+	text-align: center; 
+	width: 90%;}
+
+    h1 {font-size: 36px;}
+    h2 {font-size: 28px;}
+    nav, body {font-size: 16px;}
+    header, footer {font-size: 12px;}
+}
+
+/*--------------------------------------*/

@@ -1,0 +1,65 @@
+@import "style.css";
+@import "stylePrint.css";
+
+/*Structure Settings*/
+body {background-image: url(../images/ReebokConBG.jpg);
+    background-size: cover;}
+
+main {background-color: white; 
+    padding: 5%; margin: 20px auto 20px auto; 
+    text-align: center;
+    width: 80%; height: auto;}
+
+/*Form Settings*/
+form {width: auto; max-width: 598px; padding: 10px 0px 10px 10px; 
+    margin: auto;}
+
+label, input, textarea {display: block; height: auto;}
+
+label {float:left; clear: left;
+    width: 141px; text-align: right;
+    margin: 0px 15px 0px 20px;}
+
+input, textarea {margin-left: 20px;}
+
+input{width: 300px;}
+
+input[type = "submit"], input[placeholder], textarea[placeholder] {font-family: Tinos, serif;}
+
+input[type="submit"] {width: 120px;
+    margin-left: 110px; 
+    padding: 10px 20px 10px 20px;
+    border: 1px solid dimgray;
+    border-radius: 2px;
+    transition: background-color 0.1s linear;}
+
+input[type="submit"]:hover {background-color: lightgray;}
+
+textarea {resize: none; width: 350px;}
+
+/*Optimization Settings*/
+@media screen and (max-width: 918px) {
+    form {width: 100%; margin-left: 0px;}
+
+    label {float: none; text-align: left;
+            margin-left: 20px;}
+    
+    textarea {width: 60%;}
+
+
+    input{width: 50%;}
+    input[type="submit"] {margin-left: 20px;}  
+}
+
+@media print and (max-width: 7in) {
+    form {width: 100%; margin-left: 0px;}
+
+    label {float: none; text-align: left;
+            margin-left: 20px;}
+    
+    textarea {width: 60%;}
+
+
+    input{width: 50%;}
+    input[type="submit"] {margin-left: 20px;}  
+}

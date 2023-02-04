@@ -1,0 +1,33 @@
+.slideshow-container,
+.dot,
+.dot.act,
+.prev,
+.next {
+    display: none;
+}
+
+.slideshow-container1 {
+    height: auto;
+}
+
+.slideshow-container1 div {
+    position: relative;
+}
+
+.slideshow-container1 .mySlides1:first-of-type {
+    padding: 0px 0px 30px 0px;
+    height: auto;
+}
+
+.slideshow-container1 .mySlides1 {
+    padding: 30px 0px 30px 0px;
+    height: auto;
+}
+
+.prev,
+.next,
+#video1,
+#video2,
+#sound1 {
+    display: none;
+}

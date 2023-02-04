@@ -1,0 +1,12 @@
+@media print {
+    *{color: black;}
+
+    header, nav, footer, video, button {display: none;}
+    form, div, img, p {page-break-inside: avoid;}
+
+    a {text-decoration: none;}
+    a:after {content: "("attr(href)")"; color: black;}
+
+    img {min-width: none; min-height: none;}
+
+}

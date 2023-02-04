@@ -1,0 +1,15 @@
+@import "style.css";
+@import "stylePrint.css";
+
+/*Structure and Text Settings*/
+body {background-image: url(../images/ReebokConBG.jpg);
+    background-size: cover;}
+
+main {background-color: white; text-align: center; 
+    margin: 20px auto 20px auto; padding: 5%; 
+    width: 80%; height: auto;}
+
+/*Hyperlink Settings*/
+main a, main a:hover {font-weight: bold; text-decoration: none; color: blue;}
+
+main a:hover {color: darkblue;}
